@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>Favicon Generator</title></head>
+<body>
+  <canvas id="canvas" width="32" height="32"></canvas>
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Gradient background
+    const gradient = ctx.createLinearGradient(0, 0, 32, 32);
+    gradient.addColorStop(0, '#00BFA6');
+    gradient.addColorStop(1, '#7C3AED');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 32, 32);
+    
+    // Wrench text
+    ctx.font = 'bold 20px Arial';
+    ctx.fillStyle = 'white';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('', 16, 16);
+  </script>
+</body>
+</html>
