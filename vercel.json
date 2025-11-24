@@ -1,7 +1,12 @@
 {
-  "buildCommand": "echo 'No build needed for static site'",
-  "outputDirectory": "p",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/p/$1" }
-  ]
+    "version": 2,
+    "public": true,
+    "buildCommand": "",
+    "outputDirectory": "p",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/p/$1"
+        }
+    ]
 }
